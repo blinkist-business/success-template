@@ -1,0 +1,1941 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Success Plan · Blinkist Business</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: light;
+  /* Brand */
+  --navy: #0B2A3A;
+  --navy-deep: #0A1F2E;
+  --mint: #21D87B;
+  --mint-deep: #18B264;
+  --mint-tint: #E8FBF1;
+  --mint-soft: rgba(33,216,123,0.10);
+
+  /* Neutrals */
+  --ink: #0B2A3A;
+  --ink-60: #4A6273;
+  --ink-40: #7E8C97;
+  --ink-20: #C4CDD4;
+  --line: #E6EDF3;
+  --line-soft: #F1F5F9;
+  --surface: #FFFFFF;
+  --surface-alt: #F7FAFC;
+  --surface-soft: #FAFBFC;
+
+  /* Tokens */
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px rgba(11,42,58,0.04);
+  --shadow: 0 4px 12px rgba(11,42,58,0.06);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+body { font-family: 'Poppins', system-ui, -apple-system, sans-serif; font-weight: 400; color: var(--ink); background: var(--surface); line-height: 1.55; overflow-x: hidden; font-size: 14.5px; }
+img { max-width: 100%; height: auto; }
+
+h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.015em; line-height: 1.15; color: var(--navy); }
+h1 { font-size: 30px; font-weight: 800; }
+h2 { font-size: 22px; }
+h3 { font-size: 16px; }
+h4 { font-size: 14px; }
+p { font-size: 14.5px; color: var(--ink-60); line-height: 1.55; }
+.italic { font-family: 'Fraunces', serif; font-style: italic; font-weight: 500; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+
+/* === TOP NAV === */
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  padding: 13px 32px;
+  background:
+    radial-gradient(circle at 8% 50%, rgba(33,216,123,0.12) 0, transparent 28%),
+    radial-gradient(circle at 92% 50%, rgba(122,160,255,0.10) 0, transparent 32%),
+    linear-gradient(135deg, #F0FBF5 0%, #ECF6FA 50%, #F0F7FE 100%);
+  border-bottom: 1px solid rgba(33,216,123,0.18);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(11,42,58,0.02);
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand-logo { height: 26px; width: auto; display: block; }
+.brand-logo.foot-logo { height: 22px; filter: brightness(0) invert(1); }
+.brand-mark { width: 28px; height: 28px; }
+.brand-name span { font-weight: 500; color: var(--ink-60); }
+.topnav-title {
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+  border-left: 1px solid rgba(11,42,58,0.10);
+  min-width: 0;
+  height: 26px;
+}
+.topnav-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--mint-deep);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.topnav-eyebrow::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--mint);
+  box-shadow: 0 0 0 0 rgba(33,216,123,0.6);
+  animation: pulse 1.8s infinite;
+  flex-shrink: 0;
+}
+.cta-mini {
+  background: var(--mint);
+  color: var(--navy);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12.5px;
+  text-decoration: none;
+  transition: background .2s, transform .2s, box-shadow .2s;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(33,216,123,0.30);
+}
+.cta-mini:hover {
+  background: var(--mint-deep);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(33,216,123,0.40);
+}
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--mint-deep); background: var(--mint-soft); padding: 5px 12px; border-radius: 999px; }
+.eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--mint); }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(33,216,123,0.5); } 70% { box-shadow: 0 0 0 8px rgba(33,216,123,0); } 100% { box-shadow: 0 0 0 0 rgba(33,216,123,0); } }
+
+/* === LANDING / OVERVIEW === */
+.landing {
+  min-height: calc(100vh - 112px);
+  padding: 56px 0 72px;
+  background:
+    radial-gradient(circle at 15% 22%, rgba(33,216,123,0.16) 0, transparent 38%),
+    radial-gradient(circle at 85% 65%, rgba(122,160,255,0.12) 0, transparent 42%),
+    linear-gradient(180deg, #FFFFFF 0%, #F0FBF5 60%, #ECF6FA 100%);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.landing::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(33,216,123,0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+.landing::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(122,160,255,0.14) 0%, transparent 70%);
+  pointer-events: none;
+}
+.landing > .container { width: 100%; position: relative; z-index: 1; }
+.landing-hero { text-align: center; max-width: 760px; margin: 0 auto 56px; }
+.landing-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--mint-soft);
+  color: var(--mint-deep);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33,216,123,0.20);
+}
+.landing-eyebrow .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--mint);
+  box-shadow: 0 0 0 0 rgba(33,216,123,0.6);
+  animation: pulse 1.8s infinite;
+}
+.landing-title {
+  font-size: clamp(38px, 5.5vw, 60px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  color: var(--navy);
+  margin: 0 0 14px 0;
+}
+.landing-title .and {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--mint-deep);
+  font-size: 0.78em;
+  margin: 0 0.08em;
+  vertical-align: 0.04em;
+}
+.landing-title .customer {
+  background: linear-gradient(120deg, #21D87B 0%, #18B264 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.landing-subtitle {
+  font-size: 22px;
+  color: var(--ink-60);
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+}
+.landing-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+.landing-card {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(11,42,58,0.08);
+  border-radius: 16px;
+  padding: 26px 26px 22px;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, background .25s ease;
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+}
+.landing-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--mint) 0%, var(--mint-deep) 100%);
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+.landing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(11,42,58,0.10), 0 4px 12px rgba(33,216,123,0.10);
+  border-color: rgba(33,216,123,0.30);
+  background: #fff;
+}
+.landing-card:hover::before { opacity: 1; }
+.lc-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--mint-deep);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.lc-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.01em;
+  margin: 0;
+  line-height: 1.2;
+}
+.lc-desc {
+  font-size: 13.5px;
+  color: var(--ink-60);
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
+.lc-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--mint-deep);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: auto;
+}
+.lc-arrow span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--mint-soft);
+  font-size: 12px;
+  transition: background .25s, color .25s, transform .25s;
+}
+.landing-card:hover .lc-arrow span {
+  background: var(--mint);
+  color: var(--navy);
+  transform: translateX(3px);
+}
+
+/* === TABS === */
+.tabs-wrap { background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); position: sticky; top: 56px; z-index: 90; }
+.tabs { display: flex; max-width: 1200px; margin: 0 auto; padding: 0 32px; overflow-x: auto; }
+.tab { background: none; border: none; padding: 16px 20px 14px; font-family: inherit; font-size: 13.5px; font-weight: 600; color: var(--ink-40); cursor: pointer; border-bottom: 2px solid transparent; transition: color .15s, border-color .15s; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; position: relative; }
+.tab:hover { color: var(--navy); }
+.tab.active { color: var(--navy); border-bottom-color: var(--mint); }
+.tab.active::after { content: ''; position: absolute; left: 50%; bottom: -1px; transform: translateX(-50%); width: 80%; height: 2px; background: linear-gradient(90deg, transparent, var(--mint), transparent); }
+.tab .tab-icon { display: none; }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* === SECTIONS (unified) === */
+.section, .quadrant-section, .roadmap-section, .map-section, .roi-section, .outcome-section { padding: 56px 0 24px 0; background: var(--surface); }
+.section.alt { background: var(--surface); }
+.quadrant-section { background: linear-gradient(180deg, #FFFFFF 0%, #F0FBF5 100%); }
+.roadmap-section { background: linear-gradient(180deg, #F7FAFC 0%, #FFFFFF 100%); }
+.map-section { background: linear-gradient(180deg, #FFFFFF 0%, #F7FAFC 100%); }
+.roi-section { background: linear-gradient(180deg, #FFFFFF 0%, #F0FBF5 50%, #FFFFFF 100%); }
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 104px;
+  z-index: 80;
+  background: rgba(255,255,255,0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  margin: 0 0 24px 0;
+  padding: 12px 0;
+  box-shadow: 0 0 0 100vmax rgba(255,255,255,0.94);
+  clip-path: inset(0 -100vmax);
+}
+.section-head::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200vw;
+  height: 1px;
+  background: var(--line);
+  pointer-events: none;
+}
+.section-head .head-left { display: flex; align-items: center; gap: 12px; max-width: 720px; }
+.section-head .icon-tile { width: 32px; height: 32px; border-radius: 8px; background: linear-gradient(135deg, var(--mint-tint) 0%, #C8F3DA 100%); border: 1px solid rgba(33,216,123,0.30); display: inline-flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; box-shadow: 0 2px 6px rgba(33,216,123,0.15); }
+.section h2, .quadrant-section h2, .roadmap-section h2, .map-section h2, .roi-section h2, .outcome-section h2 { font-size: 18px; }
+.section .sub, .quadrant-section .sub, .roadmap-section .sub, .map-section .sub, .roi-section .sub { color: var(--ink-60); font-size: 12.5px; }
+
+/* === METRICS === */
+.metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 18px; }
+.metric-grid.five { grid-template-columns: repeat(5, 1fr); }
+.metric { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--mint); border-radius: 10px; padding: 16px 18px; position: relative; transition: border-color .15s, box-shadow .15s, transform .15s; }
+.section.alt .metric { background: var(--surface); }
+.metric:hover { border-color: var(--ink-20); border-left-color: var(--mint-deep); box-shadow: 0 6px 16px rgba(33,216,123,0.10); transform: translateY(-1px); }
+.metric .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-40); font-weight: 600; margin-bottom: 4px; }
+.metric .target-tag { display: inline-block; font-size: 9px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--mint-deep); font-weight: 700; background: var(--mint-soft); padding: 2px 6px; border-radius: 4px; margin-bottom: 6px; }
+.metric .value { font-size: 18px; font-weight: 700; color: var(--navy); line-height: 1.2; letter-spacing: -0.01em; }
+.metric .value.large { font-size: 24px; color: var(--mint-deep); }
+.metric .value small { font-size: 12px; font-weight: 500; color: var(--ink-60); }
+.metric .ctx { font-size: 12.5px; color: var(--ink-60); margin-top: 6px; line-height: 1.45; }
+.metric .status-dot { position: absolute; top: 14px; right: 14px; width: 8px; height: 8px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 0 3px rgba(33,216,123,0.18); display: block; }
+
+.observation { font-size: 13.5px; padding: 14px 18px; border-radius: 8px; background: linear-gradient(135deg, #DCFCE7 0%, #BBF7D0 100%); color: var(--navy); border-left: 3px solid var(--mint-deep); margin: 4px 0 24px 0; line-height: 1.55; }
+.observation b { color: var(--navy); font-weight: 700; }
+
+/* === OUTCOME / MAP CARDS === */
+.outcome-section { padding: 40px 0 24px 0; }
+.outcome-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; }
+.outcome-card, .map-card { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--mint); border-radius: var(--radius); padding: 24px 26px; }
+.outcome-label, .map-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-40); font-weight: 700; margin-bottom: 14px; display: inline-flex; align-items: center; gap: 8px; }
+.outcome-label .dot, .map-label .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--mint); }
+.outcome-prompt { font-family: 'Fraunces', serif; font-style: italic; font-size: 19px; font-weight: 500; color: var(--navy); line-height: 1.45; margin-bottom: 8px; padding-left: 26px; position: relative; }
+.outcome-prompt::before { content: '\201C'; display: block; position: absolute; left: 0; top: -6px; font-size: 48px; color: var(--mint); font-family: serif; font-style: normal; line-height: 1; opacity: 0.55; }
+.example-list { font-size: 13px; color: var(--ink-60); line-height: 1.7; margin: 12px 0 0 0; }
+.example-list li { list-style: none; position: relative; padding-left: 14px; }
+.example-list li::before { content: '\2192'; position: absolute; left: 0; color: var(--mint-deep); font-weight: 700; }
+.outcome-meta { font-size: 11.5px; color: var(--ink-40); display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); width: 100%; }
+.outcome-meta .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--mint); }
+
+.map-card { display: flex; flex-direction: column; gap: 14px; }
+.map-checkbox-row { display: flex; align-items: center; gap: 14px; }
+.checkbox-box { width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: 800; }
+.checkbox-box.checked { background: var(--mint); color: #fff; }
+.checkbox-box.checked::after { content: '\2713'; font-size: 22px; line-height: 1; }
+.map-status-text { display: flex; flex-direction: column; }
+.map-status-text .status-line { font-size: 16px; font-weight: 700; color: var(--navy); line-height: 1.2; }
+.map-status-text .status-sub { font-size: 12px; color: var(--ink-60); margin-top: 3px; }
+.map-meta { font-size: 12.5px; color: var(--ink-60); line-height: 1.55; padding-top: 14px; border-top: 1px solid var(--line); }
+.map-meta b { color: var(--navy); font-weight: 600; }
+
+/* === QUADRANT === */
+.quadrant-intro { font-size: 14px; color: var(--ink-60); max-width: 760px; margin: 0 0 24px 0; line-height: 1.6; }
+.quadrant-frame { display: grid; grid-template-columns: 24px 28px 1fr; grid-template-rows: 1fr 28px 24px; }
+.y-axis-title { grid-column: 1; grid-row: 1; writing-mode: vertical-rl; transform: rotate(180deg); display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--ink-40); }
+.y-axis-track { grid-column: 2; grid-row: 1; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 8px 0; }
+.y-axis-track .axis-arrow { width: 1px; flex: 1; background: var(--ink-20); margin: 6px 0; position: relative; }
+.y-axis-track .axis-arrow::before { content: ''; position: absolute; top: -4px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-bottom: 6px solid var(--ink-40); }
+.y-axis-track .y-end { font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600; color: var(--ink-40); }
+.x-axis-track { grid-column: 3; grid-row: 2; display: flex; align-items: center; justify-content: space-between; padding: 8px 0 0 0; }
+.x-axis-track .axis-arrow { height: 1px; flex: 1; background: var(--ink-20); margin: 0 6px; position: relative; }
+.x-axis-track .axis-arrow::after { content: ''; position: absolute; right: -4px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-left: 6px solid var(--ink-40); }
+.x-axis-track .x-end { font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600; color: var(--ink-40); }
+.x-axis-title { grid-column: 3; grid-row: 3; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--ink-40); padding-top: 4px; }
+.quadrant-grid { grid-column: 3; grid-row: 1; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; aspect-ratio: 16/7; min-height: 260px; position: relative; }
+.quadrant { background: var(--surface); padding: 18px 20px; display: flex; flex-direction: column; gap: 6px; position: relative; transition: background .15s; }
+.quadrant.q-strategic { background: linear-gradient(135deg, #DCFCE7 0%, #BBF7D0 100%); }
+.quadrant.q-organic { background: linear-gradient(135deg, #FFF8E1 0%, #FFEFC3 100%); }
+.quadrant.q-selfserve { background: linear-gradient(135deg, #EEF5FC 0%, #DAE8F7 100%); }
+.quadrant.q-focused { background: linear-gradient(135deg, #FBE9E7 0%, #FFD8CC 100%); }
+.q-icon { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,0.7); font-size: 15px; line-height: 1; margin-bottom: 2px; backdrop-filter: blur(4px); }
+.q-label { font-size: 18px; font-weight: 700; color: var(--navy); letter-spacing: -0.01em; line-height: 1.2; }
+.q-desc { font-size: 13.5px; color: var(--ink-60); line-height: 1.5; }
+.q-meta { display: none; }
+
+/* === ROADMAP === */
+.roadmap-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 28px 28px 28px; }
+.roadmap-title { font-size: 11px; color: var(--ink-40); margin-bottom: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; }
+.roadmap-grid { display: grid; grid-template-columns: 2fr 2fr 4fr 3fr; gap: 10px; }
+.rmp-col { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.rmp-phase { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.12em; padding-left: 4px; }
+.rmp-band { height: 44px; border-radius: 8px; position: relative; display: flex; align-items: center; justify-content: space-evenly; padding: 0 14px; border: 1px solid var(--line); }
+.rmp-band.b-plain { background: var(--surface-alt); }
+.rmp-band.b-mint { background: linear-gradient(135deg, #DCFCE7 0%, #BBF7D0 100%); border-color: rgba(33,216,123,0.22); }
+.rmp-line { position: absolute; left: 14px; right: 14px; top: 50%; height: 1px; background: rgba(11,42,58,0.12); transform: translateY(-50%); }
+.rmp-band.b-mint .rmp-line { background: rgba(11,42,58,0.18); }
+.rmp-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--ink-20); border: 2px solid #fff; box-shadow: 0 0 0 1px var(--ink-40); position: relative; z-index: 1; }
+.rmp-dot.start, .rmp-dot.end { background: var(--mint-deep); box-shadow: 0 0 0 1px var(--mint-deep); }
+.rmp-stamp { font-size: 10.5px; color: var(--ink-40); padding-left: 4px; font-weight: 500; line-height: 1.4; }
+.rmp-stamp .rmp-stamp-name { display: block; font-size: 11px; color: var(--navy); font-weight: 700; margin-bottom: 1px; }
+.rmp-event { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.rmp-event-meta { font-size: 11.5px; color: var(--ink-40); padding: 4px 4px 0; font-style: italic; line-height: 1.5; }
+
+.event-pill { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 10px; font-weight: 700; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.08em; }
+.event-pill.mint { background: var(--mint-soft); color: var(--mint-deep); }
+.event-pill.blue { background: var(--surface-alt); color: var(--ink-60); }
+.event-list-bullets, .event-arrow-list, .event-list { list-style: none; padding: 0; margin: 4px 0 0 0; font-size: 12px; color: var(--ink-60); line-height: 1.5; }
+.event-list-bullets li, .event-arrow-list li { padding-left: 14px; position: relative; }
+.event-list-bullets li::before { content: '\2022'; position: absolute; left: 0; color: var(--ink-40); }
+.event-arrow-list li::before { content: '\2192'; position: absolute; left: 0; color: var(--mint-deep); font-weight: 700; }
+.event-subtitle { font-size: 11.5px; color: var(--ink-40); margin-bottom: 4px; font-weight: 500; }
+
+/* === MAP TAB === */
+.outcome-banner { background: linear-gradient(135deg, #DCFCE7 0%, #BBF7D0 100%); border: 1px solid rgba(33,216,123,0.30); border-radius: var(--radius); padding: 24px 26px; margin-bottom: 28px; box-shadow: 0 8px 24px rgba(33,216,123,0.12); }
+.outcome-banner-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--mint-deep); font-weight: 700; margin-bottom: 10px; display: inline-flex; align-items: center; gap: 8px; }
+.outcome-banner-label .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--mint-deep); }
+.outcome-banner-prompt { font-family: 'Fraunces', serif; font-style: italic; font-size: 20px; font-weight: 500; color: var(--navy); line-height: 1.45; }
+.outcome-banner-prompt::before { display: none; }
+.outcome-banner-meta { font-size: 11.5px; color: var(--ink-60); margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(11,42,58,0.08); display: inline-flex; align-items: center; gap: 8px; }
+
+.map-architecture-section { margin-top: 12px; }
+.map-section-title { font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.map-section-sub { font-size: 13px; color: var(--ink-60); margin-bottom: 18px; max-width: 720px; }
+
+.skill-gap-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.skill-gap-row { display: grid; grid-template-columns: 1.3fr 1.4fr 1.3fr 1.6fr; gap: 18px; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--mint); border-radius: var(--radius); padding: 18px 22px; transition: border-color .15s, box-shadow .15s, transform .15s; box-shadow: 0 1px 3px rgba(11,42,58,0.04); position: relative; overflow: hidden; }
+.skill-gap-row::before { content: ''; position: absolute; top: 0; right: 0; width: 140px; height: 100%; background: linear-gradient(90deg, transparent, rgba(33,216,123,0.04)); pointer-events: none; }
+.skill-gap-row:nth-child(2n) { border-left-color: #7AA0FF; }
+.skill-gap-row:nth-child(2n)::before { background: linear-gradient(90deg, transparent, rgba(122,160,255,0.05)); }
+.skill-gap-row:nth-child(3n) { border-left-color: #FFAA70; }
+.skill-gap-row:nth-child(3n)::before { background: linear-gradient(90deg, transparent, rgba(255,170,112,0.05)); }
+.skill-gap-row:hover { border-color: var(--ink-20); box-shadow: 0 6px 18px rgba(11,42,58,0.08); transform: translateY(-1px); }
+.skill-gap-row:hover { border-left-color: var(--mint-deep); }
+.skill-gap-row:nth-child(2n):hover { border-left-color: #2E5BFF; }
+.skill-gap-row:nth-child(3n):hover { border-left-color: #FF8E6A; }
+.sg-cell { display: flex; flex-direction: column; gap: 4px; padding: 2px 0; position: relative; z-index: 1; }
+.sg-label { font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-40); font-weight: 700; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 2px; }
+.sg-label .dot { width: 5px; height: 5px; border-radius: 50%; display: inline-block; }
+.sg-label.gap .dot { background: #FF8E6A; }
+.sg-label.audience .dot { background: #7AA0FF; }
+.sg-label.architecture .dot { background: var(--mint-deep); }
+.sg-label.programs .dot { background: var(--navy); }
+.sg-value { font-size: 13.5px; font-weight: 600; color: var(--navy); line-height: 1.3; }
+.sg-detail { font-size: 12px; color: var(--ink-60); line-height: 1.5; }
+.sg-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+.sg-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 10.5px; font-weight: 600; background: var(--mint-soft); color: var(--mint-deep); }
+.sg-tag.blue { background: rgba(122,160,255,0.15); color: #2E5BFF; }
+.sg-tag.coral { background: rgba(255,142,106,0.15); color: #D14F2A; }
+.sg-tag.navy { background: rgba(11,42,58,0.08); color: var(--navy); }
+
+.skill-gap-header { display: grid; grid-template-columns: 1.3fr 1.4fr 1.3fr 1.6fr; gap: 18px; padding: 0 22px; margin-bottom: 6px; }
+.skill-gap-header .sg-h { font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-40); font-weight: 700; }
+
+.placeholder-row { background: var(--surface-soft); border-style: dashed; border-color: var(--ink-20); }
+.placeholder-row .sg-value { color: var(--ink-40); font-style: italic; font-weight: 500; }
+
+/* === ROI SECTION === */
+.roi-section h2 .mint-text { background: linear-gradient(120deg, #21D87B 0%, #18B264 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.roi-panel { background: linear-gradient(135deg, #DCFCE7 0%, #BBF7D0 100%); border: 1px solid rgba(33,216,123,0.30); border-radius: var(--radius-lg); padding: 22px 24px 26px 24px; margin-bottom: 16px; box-shadow: 0 8px 28px rgba(33,216,123,0.12); }
+.roi-panel-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; flex-wrap: wrap; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid rgba(11,42,58,0.08); }
+.roi-panel-label { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy); display: inline-flex; align-items: center; gap: 8px; }
+.roi-panel-label .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--navy); }
+.roi-panel-investment { background: rgba(255,255,255,0.75); padding: 5px 14px; border-radius: 999px; font-size: 12px; font-weight: 700; color: var(--navy); }
+.pillar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+.pillar { background: rgba(255,255,255,0.92); border: 1px solid rgba(255,255,255,0.6); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 6px; position: relative; }
+.pillar .picon { display: none; }
+.pillar .pnum { font-size: 10px; font-weight: 700; color: var(--mint-deep); margin-top: 0; text-transform: uppercase; letter-spacing: 0.12em; }
+.pillar .ptitle { font-size: 14px; font-weight: 700; color: var(--navy); }
+.pillar .pvalue { font-size: 22px; font-weight: 800; color: var(--navy); line-height: 1.15; letter-spacing: -0.015em; margin-top: 2px; }
+.pillar .pdesc { font-size: 12.5px; color: var(--ink-60); line-height: 1.5; margin-top: 2px; }
+.pillar .pcalc { font-size: 11px; color: var(--ink-40); font-family: 'Poppins', sans-serif; font-style: normal; line-height: 1.45; margin-top: auto; padding-top: 10px; border-top: 1px solid var(--line); }
+.roi-strip { background: var(--navy); color: #fff; border-radius: 10px; padding: 22px 26px; display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center; }
+.roi-strip .roi-mult { font-size: 40px; font-weight: 800; line-height: 1; letter-spacing: -1.5px; color: var(--mint); }
+.roi-strip .roi-text h4 { color: #fff; font-size: 15px; margin: 0 0 4px 0; }
+.roi-strip .roi-text p { color: rgba(255,255,255,0.7); font-size: 12.5px; margin: 0; line-height: 1.5; }
+.roi-strip .roi-figs { text-align: right; font-size: 11px; color: rgba(255,255,255,0.55); }
+.roi-strip .roi-figs b { display: block; color: #fff; font-size: 14px; font-weight: 700; opacity: 1; }
+
+.actions-unlock { margin-top: 32px; }
+.actions-unlock h3 { font-size: 16px; margin-bottom: 14px; color: var(--navy); }
+.action-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.action-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 6px; transition: border-color .15s, box-shadow .15s, transform .15s; }
+.action-card:hover { border-color: var(--mint); box-shadow: 0 8px 20px rgba(33,216,123,0.12); transform: translateY(-2px); }
+.action-card .anum { width: 26px; height: 26px; border-radius: 50%; background: linear-gradient(135deg, var(--mint) 0%, var(--mint-deep) 100%); border: none; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px; margin-bottom: 4px; box-shadow: 0 2px 6px rgba(33,216,123,0.30); }
+.action-card h5 { font-size: 13.5px; font-weight: 700; color: var(--navy); margin: 0; line-height: 1.3; }
+.action-card p { font-size: 12px; color: var(--ink-60); margin: 0; line-height: 1.5; }
+.action-card .day-tag { background: var(--mint-soft); color: var(--mint-deep); padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; letter-spacing: 0.04em; align-self: flex-start; margin-top: auto; text-transform: uppercase; }
+
+.roi-note { background: var(--surface-alt); border-radius: 8px; padding: 12px 16px; font-size: 12.5px; color: var(--ink-60); margin-top: 18px; display: flex; gap: 10px; }
+.roi-note .icon { display: none; }
+.roi-note b { color: var(--navy); font-weight: 600; }
+
+/* === CTA FINAL === */
+.cta-final { position: relative; padding: 56px 0 64px 0; background: var(--navy); text-align: center; overflow: hidden; }
+.cta-final::before { display: none; }
+.cta-final .container { position: relative; z-index: 2; }
+.cta-final .eyebrow { background: rgba(33,216,123,0.15); color: var(--mint); margin-bottom: 16px; padding: 5px 12px; border-radius: 999px; }
+.cta-final .eyebrow .dot { background: var(--mint); }
+.cta-final h2 { color: #fff; font-size: 30px; margin-bottom: 12px; line-height: 1.1; }
+.cta-final h2 .mint-text { color: var(--mint); }
+.cta-final p.lead { color: rgba(255,255,255,0.7); font-size: 15px; margin: 0 auto 32px auto; max-width: 560px; line-height: 1.55; }
+.team-card-final { display: inline-grid; grid-template-columns: auto 1fr; gap: 22px; background: rgba(255,255,255,0.04); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.10); border-radius: var(--radius-lg); padding: 24px 28px; align-items: center; text-align: left; max-width: 520px; }
+.team-avatar { width: 72px; height: 72px; border-radius: 50%; background: var(--mint); display: flex; align-items: center; justify-content: center; color: var(--navy); font-size: 26px; font-weight: 800; letter-spacing: -1px; box-shadow: none; border: none; flex-shrink: 0; }
+.team-info .name { font-size: 18px; font-weight: 700; color: #fff; line-height: 1.1; }
+.team-info .role { font-size: 12.5px; color: rgba(255,255,255,0.6); margin-top: 4px; margin-bottom: 12px; }
+.team-info .email { font-size: 12px; color: rgba(255,255,255,0.5); margin-bottom: 14px; }
+.team-info .email a { color: rgba(255,255,255,0.7); text-decoration: none; }
+.team-info .email a:hover { color: var(--mint); }
+.btn-book { display: inline-flex; align-items: center; gap: 8px; background: var(--mint); color: var(--navy); padding: 11px 20px; border-radius: 999px; font-weight: 700; font-size: 13px; text-decoration: none; transition: background .2s; box-shadow: none; }
+.btn-book:hover { background: #fff; box-shadow: none; }
+.btn-book .arrow { transition: transform .2s; }
+.btn-book:hover .arrow { transform: translateX(2px); }
+.cta-final .closing-note { margin-top: 24px; font-size: 12px; color: rgba(255,255,255,0.4); }
+
+/* === LEGEND === */
+.legend-wrap { padding: 24px 0 40px 0; background: var(--surface); border-top: 1px solid var(--line); }
+.legend { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; font-size: 12px; color: var(--ink-60); }
+.legend .item { display: inline-flex; align-items: center; gap: 7px; }
+.legend .swatch { width: 8px; height: 8px; border-radius: 50%; }
+.legend .source { margin-left: auto; color: var(--ink-40); font-size: 11.5px; }
+
+/* === FOOT === */
+.foot { background: var(--navy); color: #fff; padding: 22px 0; text-align: center; }
+.foot .container { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.foot .brand { color: #fff; }
+.foot .brand-name span { color: rgba(255,255,255,0.6); }
+.foot p { color: rgba(255,255,255,0.6); font-size: 12px; margin: 0; }
+
+/* === MOBILE ROADMAP === */
+.roadmap-mobile { display: none; }
+.rm-phase { border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-bottom: 10px; background: var(--surface); }
+.rm-phase.b-plan { background: var(--surface-alt); }
+.rm-phase.b-launch { background: var(--mint-tint); border-color: var(--mint-soft); }
+.rm-phase.b-engage { background: var(--mint-tint); border-color: var(--mint-soft); }
+.rm-phase.b-prove { background: var(--surface-alt); }
+.rm-phase-name { font-size: 11px; font-weight: 700; color: var(--navy); display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 0.1em; }
+.rm-phase-name::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--ink-20); flex-shrink: 0; }
+.rm-phase.b-plan .rm-phase-name::before, .rm-phase.b-prove .rm-phase-name::before { background: var(--mint-deep); }
+.rm-phase-meta { font-size: 11.5px; color: var(--ink-60); margin: 4px 0 12px 16px; font-weight: 500; font-style: normal; font-family: 'Poppins', sans-serif; }
+.rm-event { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; box-shadow: none; }
+.rm-event .event-pill { margin-bottom: 8px; }
+.rm-event ul { list-style: none; padding: 0; margin: 6px 0 0 0; font-size: 12px; color: var(--ink-60); line-height: 1.55; }
+.rm-event ul li { padding-left: 14px; position: relative; }
+.rm-event ul li::before { content: '\2192'; position: absolute; left: 0; color: var(--mint-deep); font-weight: 700; }
+.rm-event ul.bullets li::before { content: '\2022'; color: var(--ink-40); }
+
+/* === QUADRANT EFFORT PILLS === */
+.q-effort {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 10px;
+}
+.q-effort span {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.55);
+  color: var(--navy);
+  border: 1px solid rgba(11,42,58,0.06);
+}
+
+/* === KEY DATES LIST === */
+.dates-list {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.date-row {
+  display: grid;
+  grid-template-columns: 32px 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 22px;
+  border-bottom: 1px solid var(--line-soft);
+  transition: background .15s;
+}
+.date-row:last-child { border-bottom: none; }
+.date-row:hover { background: var(--surface-alt); }
+.date-row-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--surface-alt);
+  border: 2px solid var(--surface);
+  box-shadow: 0 0 0 1px var(--ink-20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--ink-40);
+  font-weight: 700;
+}
+.date-row-icon.mint {
+  background: var(--mint-deep);
+  color: #fff;
+  box-shadow: 0 0 0 1px var(--mint-deep);
+}
+.date-row-body { min-width: 0; }
+.date-row-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.01em;
+}
+.date-row-meta {
+  font-size: 12px;
+  color: var(--ink-60);
+  margin-top: 2px;
+  line-height: 1.4;
+}
+.date-row-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-40);
+  font-style: italic;
+  font-family: 'Fraunces', serif;
+  white-space: nowrap;
+  background: var(--surface-alt);
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px dashed var(--ink-20);
+}
+.date-row-value.set {
+  font-style: normal;
+  font-family: 'Poppins', sans-serif;
+  color: var(--mint-deep);
+  background: var(--mint-soft);
+  border: 1px solid rgba(33,216,123,0.30);
+}
+
+/* === MAP DOC HEADER === */
+.map-doc-header {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0FBF5 100%);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 26px 30px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.map-doc-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--mint-deep);
+  margin-bottom: 8px;
+}
+.map-doc-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+  line-height: 1.15;
+}
+.map-doc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 28px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 12.5px;
+  color: var(--ink-60);
+}
+.map-doc-meta b { color: var(--navy); font-weight: 700; }
+.map-doc-meta div span { display: block; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-40); margin-bottom: 2px; }
+
+/* === MAP NUMBERED SECTION HEADERS === */
+.map-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding-top: 8px;
+}
+.map-step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--mint) 0%, var(--mint-deep) 100%);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(33,216,123,0.30);
+}
+.map-step h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+/* === SIGNATURES === */
+.map-sigs {
+  margin-top: 36px;
+  padding: 28px 30px;
+  background: linear-gradient(180deg, var(--surface) 0%, #FAFCFD 100%);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.map-sigs-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.map-sigs-head h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+}
+.map-sigs-head p {
+  font-size: 12.5px;
+  color: var(--ink-60);
+  margin: 2px 0 0 0;
+}
+.map-sigs-head .map-step-num { width: 24px; height: 24px; font-size: 11px; }
+.sig-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.sig-block {
+  padding: 22px 22px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  position: relative;
+}
+.sig-block.blinkist { border-left: 3px solid var(--mint-deep); }
+.sig-block.customer { border-left: 3px solid var(--navy); }
+.sig-line {
+  height: 36px;
+  border-bottom: 2px solid var(--ink-20);
+  margin-bottom: 10px;
+  position: relative;
+}
+.sig-line::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  font-size: 11px;
+  color: var(--ink-40);
+}
+.sig-role {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-40);
+  margin-bottom: 4px;
+}
+.sig-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+.sig-org {
+  font-size: 12px;
+  color: var(--ink-60);
+  margin-top: 2px;
+}
+.sig-date {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line-soft);
+  font-size: 11.5px;
+  color: var(--ink-40);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sig-date::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--ink-20);
+  display: inline-block;
+}
+
+/* === ADMIN SPACE === */
+.admin-intro {
+  font-size: 14px;
+  color: var(--ink-60);
+  max-width: 720px;
+  margin: 0 0 24px 0;
+  line-height: 1.55;
+}
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.admin-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 22px 24px 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-decoration: none;
+  position: relative;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+  min-height: 132px;
+  overflow: hidden;
+}
+.admin-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--mint);
+  opacity: 0;
+  transition: opacity .2s;
+}
+.admin-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(11,42,58,0.08), 0 2px 8px rgba(33,216,123,0.10);
+  border-color: rgba(33,216,123,0.30);
+}
+.admin-card:hover::before { opacity: 1; }
+.admin-card .ac-cat {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--mint-deep);
+  margin-bottom: 2px;
+}
+.admin-card .ac-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin: 0;
+  padding-right: 36px;
+}
+.admin-card .ac-desc {
+  font-size: 12.5px;
+  color: var(--ink-60);
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
+.admin-card .ac-arrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--mint-soft);
+  color: var(--mint-deep);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background .2s, color .2s, transform .2s;
+}
+.admin-card:hover .ac-arrow {
+  background: var(--mint);
+  color: var(--navy);
+  transform: translate(2px, -2px);
+}
+
+/* Placeholder admin cards (Custom Programs to be filled in) */
+.admin-card-placeholder {
+  background: var(--surface-soft);
+  border-style: dashed;
+  border-color: var(--ink-20);
+}
+.admin-card-placeholder .ac-cat { color: var(--ink-40); }
+.admin-card-placeholder .ac-title { color: var(--ink-40); font-style: italic; }
+.admin-card-placeholder .ac-desc { color: var(--ink-40); font-style: italic; }
+.admin-card-placeholder .ac-arrow { background: var(--surface-alt); color: var(--ink-40); }
+
+/* Primary login card spans full width */
+.admin-card-primary {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #0B2A3A 0%, #17344A 50%, #0A1F2E 100%);
+  color: #fff;
+  border: 1px solid rgba(33,216,123,0.30);
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 26px;
+  min-height: auto;
+  position: relative;
+}
+.admin-card-primary::before { display: none; }
+.admin-card-primary::after {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(33,216,123,0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+.admin-card-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(11,42,58,0.20), 0 4px 16px rgba(33,216,123,0.20); border-color: var(--mint); }
+.admin-card-primary .ac-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--mint);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 800;
+  flex-shrink: 0;
+  box-shadow: 0 6px 16px rgba(33,216,123,0.30);
+  position: relative;
+  z-index: 1;
+}
+.admin-card-primary .ac-body { flex: 1; min-width: 0; position: relative; z-index: 1; }
+.admin-card-primary .ac-cat { color: var(--mint); margin-bottom: 4px; }
+.admin-card-primary .ac-title { color: #fff; font-size: 18px; padding-right: 0; }
+.admin-card-primary .ac-desc { color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 2px; }
+.admin-card-primary .ac-arrow {
+  position: relative;
+  top: auto;
+  right: auto;
+  background: var(--mint);
+  color: var(--navy);
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  margin-left: auto;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(33,216,123,0.30);
+  z-index: 1;
+}
+.admin-card-primary:hover .ac-arrow { background: #fff; }
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .container { padding: 0 24px; }
+  .pillar-grid { grid-template-columns: repeat(2, 1fr); }
+  .action-grid { grid-template-columns: repeat(2, 1fr); }
+  .metric-grid.five { grid-template-columns: repeat(3, 1fr); }
+  .quadrant-grid { aspect-ratio: auto; min-height: 280px; }
+  .skill-gap-row, .skill-gap-header { grid-template-columns: 1fr 1fr; }
+  .skill-gap-header { display: none; }
+  .roadmap-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .outcome-grid { grid-template-columns: 1fr; }
+  .tabs { padding: 0 24px; }
+  .landing-cards { grid-template-columns: 1fr; max-width: 560px; gap: 12px; }
+  .landing-card { min-height: 0; padding: 22px 24px; }
+  .admin-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  body { font-size: 14px; }
+  .container { padding: 0 18px; }
+
+  .topnav { padding: 10px 16px; gap: 12px; }
+  .cta-mini { font-size: 11.5px; padding: 7px 12px; letter-spacing: -0.01em; }
+  .brand-logo { height: 22px; }
+
+  .tabs-wrap { top: 50px; }
+  .tabs { padding: 0 14px; }
+  .tab { padding: 13px 14px; font-size: 12.5px; }
+
+  .section, .quadrant-section, .roadmap-section, .map-section, .roi-section, .outcome-section { padding: 36px 0 12px 0; }
+  .legend-wrap { padding: 20px 0 32px 0; }
+
+  .section h2, .quadrant-section h2, .roadmap-section h2, .map-section h2, .roi-section h2, .outcome-section h2 { font-size: 19px; }
+  .section-head { gap: 8px; margin-bottom: 18px; position: static; padding: 0; background: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; box-shadow: none; clip-path: none; }
+  .section-head::after { display: none; }
+  .section .sub, .quadrant-section .sub, .roadmap-section .sub, .map-section .sub, .roi-section .sub { font-size: 12.5px; }
+  .quadrant-intro { font-size: 13px; margin-bottom: 18px; }
+
+  .quadrant-frame { display: block; }
+  .y-axis-title, .y-axis-track, .x-axis-track, .x-axis-title { display: none; }
+  .quadrant-grid { display: grid; grid-template-columns: 1fr 1fr; min-height: 0; gap: 1px; aspect-ratio: auto; }
+  .quadrant { padding: 14px 14px; gap: 4px; }
+  .q-label { font-size: 15px; }
+  .q-desc { font-size: 12.5px; line-height: 1.45; }
+
+  .outcome-card, .map-card { padding: 20px 22px; }
+  .outcome-prompt { font-size: 17px; }
+  .outcome-banner { padding: 20px 22px; margin-bottom: 22px; }
+  .outcome-banner-prompt { font-size: 17px; line-height: 1.45; }
+  .map-section-sub { font-size: 12.5px; margin-bottom: 16px; }
+
+  .metric-grid, .metric-grid.five { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .metric { padding: 12px 14px; }
+  .metric .label { font-size: 9.5px; }
+  .metric .value { font-size: 16px; }
+  .metric .value.large { font-size: 20px; }
+  .metric .ctx { font-size: 11.5px; margin-top: 6px; }
+  .metric .target-tag { font-size: 8.5px; margin-bottom: 6px; }
+  .observation { font-size: 12.5px; padding: 12px 14px; margin: 4px 0 18px 0; }
+
+  .roi-panel { padding: 18px 16px 22px 16px; }
+  .roi-panel-head { gap: 8px; margin-bottom: 14px; padding-bottom: 12px; }
+  .roi-panel-label { font-size: 10.5px; }
+  .roi-panel-investment { font-size: 11.5px; padding: 5px 12px; }
+  .pillar-grid { grid-template-columns: 1fr; gap: 8px; margin-bottom: 12px; }
+  .pillar { padding: 14px 16px; }
+  .pillar .pvalue { font-size: 18px; }
+  .pillar .ptitle { font-size: 13.5px; }
+  .pillar .pdesc { font-size: 12px; }
+  .pillar .pcalc { font-size: 10.5px; }
+  .roi-strip { grid-template-columns: 1fr; text-align: center; padding: 18px; gap: 10px; }
+  .roi-strip .roi-mult { font-size: 32px; }
+  .roi-strip .roi-text h4 { font-size: 14px; }
+  .roi-strip .roi-text p { font-size: 12px; }
+  .roi-strip .roi-figs { text-align: center; font-size: 11px; }
+
+  .actions-unlock { margin-top: 24px; }
+  .actions-unlock h3 { font-size: 15px; margin-bottom: 12px; }
+  .action-grid { grid-template-columns: 1fr; gap: 8px; }
+  .action-card { padding: 14px; }
+  .roi-note { font-size: 12px; padding: 12px 14px; margin-top: 16px; }
+
+  .skill-gap-row { grid-template-columns: 1fr; padding: 16px 18px; gap: 0; }
+  .sg-cell { padding: 10px 0; border-top: 1px solid var(--line); }
+  .sg-cell:first-child { border-top: none; padding-top: 0; }
+  .sg-cell:last-child { padding-bottom: 0; }
+  .sg-value { font-size: 13.5px; }
+  .sg-detail { font-size: 12px; }
+
+  .roadmap-card { padding: 20px 16px 22px 16px; }
+  .roadmap-title { margin-bottom: 14px; }
+  .roadmap-grid { grid-template-columns: 1fr; gap: 18px; }
+  .rmp-band { height: 38px; }
+  .rmp-event { padding: 12px 14px; }
+
+  .landing { min-height: calc(100vh - 140px); padding: 36px 0 48px; }
+  .landing-hero { margin-bottom: 36px; }
+  .landing-eyebrow { font-size: 10px; padding: 5px 12px; letter-spacing: 0.14em; margin-bottom: 14px; }
+  .landing-title { font-size: 32px; line-height: 1.1; margin-bottom: 10px; }
+  .landing-title .and { font-size: 0.7em; }
+  .landing-subtitle { font-size: 17px; }
+  .lc-title { font-size: 18px; }
+  .lc-desc { font-size: 13px; }
+
+  .date-row { grid-template-columns: 28px 1fr; gap: 12px; padding: 14px 16px; }
+  .date-row-value { grid-column: 2; justify-self: start; margin-top: 4px; font-size: 12px; padding: 4px 10px; }
+  .date-row-icon { width: 24px; height: 24px; font-size: 10px; }
+  .date-row-name { font-size: 13.5px; }
+  .date-row-meta { font-size: 11.5px; }
+
+  .map-doc-header { padding: 22px 20px; }
+  .map-doc-title { font-size: 19px; }
+  .map-doc-meta { gap: 14px 22px; font-size: 11.5px; }
+
+  .map-step h3 { font-size: 15px; }
+  .map-step-num { width: 24px; height: 24px; font-size: 11px; }
+
+  .map-sigs { padding: 22px 18px; }
+  .sig-grid { grid-template-columns: 1fr; gap: 14px; }
+  .sig-block { padding: 18px 20px 16px; }
+  .sig-name { font-size: 14px; }
+
+  .admin-grid { grid-template-columns: 1fr; gap: 10px; }
+  .admin-card { padding: 18px 20px 16px; min-height: 0; }
+  .admin-card .ac-title { font-size: 15px; padding-right: 36px; }
+  .admin-card .ac-desc { font-size: 12px; }
+  .admin-card-primary { padding: 18px 20px; gap: 14px; }
+  .admin-card-primary .ac-icon { width: 40px; height: 40px; font-size: 18px; }
+  .admin-card-primary .ac-title { font-size: 16px; }
+  .admin-card-primary .ac-arrow { width: 36px; height: 36px; font-size: 14px; }
+
+  .cta-final { padding: 40px 0 48px 0; }
+  .cta-final h2 { font-size: 22px; line-height: 1.2; margin-bottom: 10px; }
+  .cta-final p.lead { font-size: 13.5px; margin-bottom: 24px; }
+  .team-card-final { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 22px 20px; gap: 12px; max-width: 100%; }
+  .team-avatar { width: 64px; height: 64px; font-size: 22px; margin: 0 auto; }
+  .team-info .name { font-size: 17px; }
+  .btn-book { padding: 10px 18px; font-size: 12.5px; }
+
+  .foot { padding: 20px 0; }
+  .foot .container { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .foot p { font-size: 11.5px; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 14px; }
+  .topnav { padding: 10px 14px; gap: 6px 10px; }
+  .cta-mini { font-size: 10.5px; padding: 6px 10px; }
+  .topnav-eyebrow { font-size: 9px; letter-spacing: 0.1em; }
+  .topnav-name { font-size: 11.5px; }
+
+  .tab { padding: 12px 12px; font-size: 11.5px; }
+
+  .quadrant-grid { grid-template-columns: 1fr; }
+  .quadrant { padding: 14px 14px; }
+
+  .metric-grid, .metric-grid.five { grid-template-columns: 1fr; }
+
+  .cta-final h2 { font-size: 20px; }
+}
+
+@media print {
+  .topnav, .tabs-wrap { position: static; }
+  .tab-panel { display: block !important; page-break-before: always; }
+  .section, .roi-section, .legend-wrap, .outcome-section, .cta-final, .quadrant-section, .roadmap-section, .map-section { padding: 24px 0; page-break-inside: avoid; }
+  body { background: #fff; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="#" class="brand">
+    <img class="brand-logo" src="data:image/avif;base64,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" alt="Blinkist Business">
+  </a>
+  <a href="https://meetings-eu1.hubspot.com/marlon-tinneberg" target="_blank" rel="noopener" class="cta-mini">Schedule call with your CSM →</a>
+</nav>
+
+<!-- TAB NAVIGATION -->
+<div class="tabs-wrap">
+  <div class="tabs" role="tablist">
+    <button class="tab active" data-tab="overview" role="tab">Overview</button>
+    <button class="tab" data-tab="partnership" role="tab">Our Partnership</button>
+    <button class="tab" data-tab="map" role="tab">Mutual Action Plan</button>
+    <button class="tab" data-tab="roi" role="tab">Performance Review</button>
+    <button class="tab" data-tab="admin" role="tab">Your Admin Space</button>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- TAB 0: OVERVIEW (Landing)                    -->
+<!-- ============================================ -->
+<div class="tab-panel active" id="tab-overview">
+  <section class="landing">
+    <div class="container">
+      <div class="landing-hero">
+        <span class="landing-eyebrow"><span class="dot"></span> Success Plan · Refreshed quarterly</span>
+        <h1 class="landing-title">Blinkist <span class="and">&amp;</span> <span class="customer">[Company Name]</span></h1>
+      </div>
+      <div class="landing-cards">
+        <button class="landing-card" data-tab-target="partnership">
+          <div class="lc-num">01 · Foundation</div>
+          <h3 class="lc-title">Our Partnership</h3>
+          <p class="lc-desc">Pick the depth of partnership that fits your bandwidth, agree the key dates across your contract, and frame the ROI we&rsquo;re targeting together.</p>
+          <div class="lc-arrow">Open <span>→</span></div>
+        </button>
+        <button class="landing-card" data-tab-target="map">
+          <div class="lc-num">02 · Direction</div>
+          <h3 class="lc-title">Mutual Action Plan</h3>
+          <p class="lc-desc">The signed working document — your business outcome, the skill gaps and programmes that close them, and the 90-day delivery plan.</p>
+          <div class="lc-arrow">Open <span>→</span></div>
+        </button>
+        <button class="landing-card" data-tab-target="roi">
+          <div class="lc-num">03 · Measurement</div>
+          <h3 class="lc-title">Performance Review</h3>
+          <p class="lc-desc">How we measure success — top-decile benchmarks across stakeholders, provisioning, curation, reach, behaviour, social learning, and integrations.</p>
+          <div class="lc-arrow">Open <span>→</span></div>
+        </button>
+        <button class="landing-card" data-tab-target="admin">
+          <div class="lc-num">04 · Action</div>
+          <h3 class="lc-title">Your Admin Space</h3>
+          <p class="lc-desc">Quick links into your Blinkist workspace — admin actions, signed contract, onboarding video, and your live custom programmes.</p>
+          <div class="lc-arrow">Open <span>→</span></div>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================================ -->
+<!-- TAB 1: OUR PARTNERSHIP                       -->
+<!-- ============================================ -->
+<div class="tab-panel" id="tab-partnership">
+
+  <!-- COLLABORATION 2x2 MATRIX -->
+  <section class="quadrant-section">
+    <div class="container">
+      <div class="section-head">
+        <div class="head-left"><div class="icon-tile">🤝</div><h2>Choose your partnership depth</h2></div>
+        <span class="sub">There's no wrong answer — pick the level that matches your bandwidth</span>
+      </div>
+      <p class="quadrant-intro">How much your organisation gets out of Blinkist depends on two things: how much commitment your <b>admin team and exec sponsor</b> bring to driving the programme, and how broadly Blinkist is <b>wired into your organisation</b> — seat penetration, LMS integration, and the number of touchpoints live. We pick the right depth together at kickoff and revisit it every QBR. <b>Organic is a perfectly valid choice</b> if light-touch is what fits — many customers run it that way. A <b>strategic partnership</b> is what you reach for when you want measurable, programme-grade impact.</p>
+      <div class="quadrant-frame">
+        <div class="y-axis-title">Org exposure</div>
+        <div class="y-axis-track">
+          <span class="y-end">High</span>
+          <span class="axis-arrow"></span>
+          <span class="y-end">Low</span>
+        </div>
+        <div class="quadrant-grid">
+          <!-- top-left: low admin/exec engagement, high org exposure - Self-Serve -->
+          <div class="quadrant q-selfserve">
+            <div class="q-icon">🌐</div>
+            <div class="q-label">Self-Serve</div>
+            <div class="q-desc">Broad rollout — seats deployed, SSO and LMS integrated, multiple touchpoints live. No admin curation or exec push behind it.</div>
+            <div class="q-effort"><span>Mid effort</span><span>Mid impact</span></div>
+          </div>
+          <!-- top-right: high admin/exec, high exposure - Strategic Partnership -->
+          <div class="quadrant q-strategic">
+            <div class="q-icon">🚀</div>
+            <div class="q-label">Strategic Partnership</div>
+            <div class="q-desc">Curated programmes, exec sponsor, MAP signed, QBRs live — paired with broad seat penetration and integrated touchpoints.</div>
+            <div class="q-effort"><span>High effort</span><span>Highest impact</span></div>
+          </div>
+          <!-- bottom-left: low admin/exec, low exposure - Organic -->
+          <div class="quadrant q-organic">
+            <div class="q-icon">🌱</div>
+            <div class="q-label">Organic</div>
+            <div class="q-desc">Light footprint, no admin push. A small group of learners picks it up on their own. A valid, low-investment starting point.</div>
+            <div class="q-effort"><span>Lowest effort</span><span>Modest impact</span></div>
+          </div>
+          <!-- bottom-right: high admin/exec, low exposure - Focused -->
+          <div class="quadrant q-focused">
+            <div class="q-icon">🎯</div>
+            <div class="q-label">Focused</div>
+            <div class="q-desc">Concentrated programme for a narrow audience — admin and exec invested, but rollout is deliberately small. Often a step toward strategic.</div>
+            <div class="q-effort"><span>Mid effort</span><span>Mid impact</span></div>
+          </div>
+        </div>
+        <div class="x-axis-track">
+          <span class="x-end">Low</span>
+          <span class="axis-arrow"></span>
+          <span class="x-end">High</span>
+        </div>
+        <div class="x-axis-title">Admin + exec engagement</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY DATES -->
+  <section class="roadmap-section">
+    <div class="container">
+      <div class="section-head">
+        <div class="head-left"><div class="icon-tile">📅</div><h2>Key dates</h2></div>
+        <span class="sub">To be confirmed at onboarding — the cadence of touchpoints across your contract</span>
+      </div>
+
+      <div class="dates-list">
+        <div class="date-row">
+          <div class="date-row-icon mint">●</div>
+          <div class="date-row-body">
+            <div class="date-row-name">Start of Contract</div>
+            <div class="date-row-meta">When your plan goes live</div>
+          </div>
+          <div class="date-row-value">[Start date]</div>
+        </div>
+        <div class="date-row">
+          <div class="date-row-icon">1</div>
+          <div class="date-row-body">
+            <div class="date-row-name">Onboarding Call</div>
+            <div class="date-row-meta">Success Plan co-creation with your CSM · MAP signed</div>
+          </div>
+          <div class="date-row-value">[To be scheduled]</div>
+        </div>
+        <div class="date-row">
+          <div class="date-row-icon">2</div>
+          <div class="date-row-body">
+            <div class="date-row-name">QBR 1 · Quarterly Review</div>
+            <div class="date-row-meta">Review progress · executive report</div>
+          </div>
+          <div class="date-row-value">[QBR 1 date]</div>
+        </div>
+        <div class="date-row">
+          <div class="date-row-icon">3</div>
+          <div class="date-row-body">
+            <div class="date-row-name">QBR 2 · Quarterly Review</div>
+            <div class="date-row-meta">Review progress · executive report</div>
+          </div>
+          <div class="date-row-value">[QBR 2 date]</div>
+        </div>
+        <div class="date-row">
+          <div class="date-row-icon">4</div>
+          <div class="date-row-body">
+            <div class="date-row-name">QBR 3 · Quarterly Review</div>
+            <div class="date-row-meta">Review progress · executive report</div>
+          </div>
+          <div class="date-row-value">[QBR 3 date]</div>
+        </div>
+        <div class="date-row">
+          <div class="date-row-icon">5</div>
+          <div class="date-row-body">
+            <div class="date-row-name">End of Year Review</div>
+            <div class="date-row-meta">Performance analysis for the full year · next-year planning</div>
+          </div>
+          <div class="date-row-value">[EoY date]</div>
+        </div>
+        <div class="date-row">
+          <div class="date-row-icon mint">●</div>
+          <div class="date-row-body">
+            <div class="date-row-name">Renewal</div>
+            <div class="date-row-meta">Contract renewal decision</div>
+          </div>
+          <div class="date-row-value">[Renewal date]</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI FORECAST PLACEHOLDER -->
+  <section class="roi-section">
+    <div class="container">
+      <div class="section-head"><div class="head-left"><div class="icon-tile">📊</div><h2>Your ROI forecast</h2></div><span class="sub">To be modelled together at onboarding — the targets we are aiming for</span></div>
+
+      <div class="roi-panel">
+        <div class="roi-panel-head"><span class="roi-panel-label"><span class="dot"></span>Annual value · [Your headcount] employees</span><span class="roi-panel-investment">[Annual investment]</span></div>
+        <div class="pillar-grid">
+          <div class="pillar"><div class="pnum">Pillar 1</div><div class="ptitle">Business Impact</div><div class="pvalue">[skill applications / yr]</div><div class="pdesc">Frameworks from Blinks applied to real work decisions.</div><div class="pcalc">Headcount × Blinks/year × 72% application rate</div></div>
+          <div class="pillar"><div class="pnum">Pillar 2</div><div class="ptitle">Retention</div><div class="pvalue">[€ retention value]</div><div class="pdesc">High performers retained + faster onboarding (probation pass-rate lift).</div><div class="pcalc">High-performer salary × retention lift + new-hire ramp value</div></div>
+          <div class="pillar"><div class="pnum">Pillar 3</div><div class="ptitle">Time Saved</div><div class="pvalue">[L&amp;D capacity]</div><div class="pdesc">L&amp;D curation time saved annually — capacity returned to strategic work.</div><div class="pcalc">Days saved per programme × programmes per year = FTE returned</div></div>
+          <div class="pillar"><div class="pnum">Pillar 4</div><div class="ptitle">Cost Efficiency</div><div class="pvalue">[€ savings]</div><div class="pdesc">vs individual licences, L&amp;D effort, vendor consolidation, group coaching savings.</div><div class="pcalc">Avoided attrition + ops effort + vendor consolidation</div></div>
+        </div>
+        <div class="roi-strip"><div><div class="roi-mult">[ ROI × ]</div><div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;opacity:0.85;margin-top:4px;">Target ROI</div></div><div class="roi-text"><h4>To be calculated for [Company Name]</h4><p>Modelled against your specific headcount, contract value, and the partnership depth you choose.</p></div><div class="roi-figs"><b>[€ invested]</b>Annual investment<br><b>[€ value]</b>Annual value</div></div>
+      </div>
+
+      <div class="roi-note"><div><b>Forecast — not a commitment.</b> We model these targets together at onboarding, set baselines at QBR 1, and re-assess every quarter. Numbers move with your headcount, scope, and chosen partnership depth.</div></div>
+    </div>
+  </section>
+
+</div>
+<!-- /TAB 1 -->
+
+<!-- ============================================ -->
+<!-- TAB 2: MUTUAL ACTION PLAN                    -->
+<!-- ============================================ -->
+<div class="tab-panel" id="tab-map">
+
+  <section class="map-section">
+    <div class="container">
+
+      <!-- Document-style header -->
+      <div class="map-doc-header">
+        <div class="map-doc-eyebrow">Mutual Action Plan · Strategic Partnership</div>
+        <h2 class="map-doc-title">Joint plan between Blinkist Business and [Company Name]</h2>
+        <div class="map-doc-meta">
+          <div><span>Customer</span><b>[Company Name]</b></div>
+          <div><span>Partnership Lead</span><b>Marlon Tinneberg, Blinkist</b></div>
+          <div><span>Effective</span><b>[Start date] – [Renewal date]</b></div>
+          <div><span>Version</span><b>v1.0 · refreshed at every QBR</b></div>
+        </div>
+      </div>
+
+      <div class="section-head">
+        <div class="head-left"><div class="icon-tile">🎯</div><h2>Mutual Action Plan</h2></div>
+        <span class="sub">A signed working document — co-authored at onboarding, refreshed every quarter</span>
+      </div>
+
+      <!-- Step 1: Business outcome -->
+      <div class="map-step">
+        <div class="map-step-num">1</div>
+        <h3>Business outcome</h3>
+      </div>
+      <div class="outcome-banner">
+        <div class="outcome-banner-label"><span class="dot"></span>Customer-stated business outcome</div>
+        <div class="outcome-banner-prompt">[Captured during onboarding in your own words — the one-sentence answer to: "If Blinkist works as intended over the next 12 months, what changes for our business?"]</div>
+        <div class="outcome-banner-meta"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--mint-deep);"></span> Captured at onboarding · refreshed annually</div>
+      </div>
+
+      <!-- Step 2: Strategic priorities (skill gaps × audiences × architecture × programmes) -->
+      <div class="map-step">
+        <div class="map-step-num">2</div>
+        <h3>Strategic priorities</h3>
+      </div>
+      <p class="map-section-sub">Each row maps a skill gap to the audience it serves, the architecture it runs through, and the programmes that deliver it.</p>
+
+      <div class="skill-gap-header">
+        <div class="sg-h">Skill gap</div>
+        <div class="sg-h">Audience</div>
+        <div class="sg-h">Architecture</div>
+        <div class="sg-h">Programmes</div>
+      </div>
+
+      <div class="skill-gap-grid">
+
+        <div class="skill-gap-row">
+          <div class="sg-cell">
+            <span class="sg-label gap"><span class="dot"></span>Skill gap</span>
+            <div class="sg-value">Leadership readiness</div>
+            <div class="sg-detail">Top-300 cohort needs to step up into broader scope.</div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label audience"><span class="dot"></span>Audience</span>
+            <div class="sg-value">People leaders · Top-300</div>
+            <div class="sg-tags">
+              <span class="sg-tag blue">~300 people</span>
+              <span class="sg-tag navy">Director+</span>
+            </div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label architecture"><span class="dot"></span>Architecture</span>
+            <div class="sg-value">[Your LMS / HRIS]</div>
+            <div class="sg-detail">SSO via [IdP] · LMS integration · HRIS auto-provisioning</div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label programs"><span class="dot"></span>Programmes</span>
+            <div class="sg-value">Leadership Pathway + Coaching cohort</div>
+            <div class="sg-detail">Curated collection · 6-month pathway · live group coaching for managers.</div>
+          </div>
+        </div>
+
+        <div class="skill-gap-row">
+          <div class="sg-cell">
+            <span class="sg-label gap"><span class="dot"></span>Skill gap</span>
+            <div class="sg-value">AI fluency</div>
+            <div class="sg-detail">R&amp;D and product teams need shared baseline on practical AI use.</div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label audience"><span class="dot"></span>Audience</span>
+            <div class="sg-value">R&amp;D · Product · Data</div>
+            <div class="sg-tags">
+              <span class="sg-tag blue">[seat count]</span>
+              <span class="sg-tag navy">IC + Manager</span>
+            </div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label architecture"><span class="dot"></span>Architecture</span>
+            <div class="sg-value">[Your LMS] + Slack</div>
+            <div class="sg-detail">Pathway in LMS · Slack channel for masterclass nudges.</div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label programs"><span class="dot"></span>Programmes</span>
+            <div class="sg-value">AI Fluency Pathway + Masterclasses</div>
+            <div class="sg-detail">Linear skill journey · live expert masterclasses · team peer sessions per BU.</div>
+          </div>
+        </div>
+
+        <div class="skill-gap-row">
+          <div class="sg-cell">
+            <span class="sg-label gap"><span class="dot"></span>Skill gap</span>
+            <div class="sg-value">Time-to-productivity</div>
+            <div class="sg-detail">New joiners ramping too slowly through probation.</div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label audience"><span class="dot"></span>Audience</span>
+            <div class="sg-value">All new hires</div>
+            <div class="sg-tags">
+              <span class="sg-tag blue">~400/yr</span>
+              <span class="sg-tag navy">First 90 days</span>
+            </div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label architecture"><span class="dot"></span>Architecture</span>
+            <div class="sg-value">[HRIS] auto-provisioning</div>
+            <div class="sg-detail">Day-one access via Workday/SuccessFactors · onboarding pathway assigned automatically.</div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label programs"><span class="dot"></span>Programmes</span>
+            <div class="sg-value">New Joiner Onboarding Pathway</div>
+            <div class="sg-detail">Curated pathway tied to first-90-days expectations · assignments tracked at BU level.</div>
+          </div>
+        </div>
+
+        <div class="skill-gap-row">
+          <div class="sg-cell">
+            <span class="sg-label gap"><span class="dot"></span>Skill gap</span>
+            <div class="sg-value">Customer-facing skills</div>
+            <div class="sg-detail">Sales and CS need consistent baseline on negotiation, discovery, account expansion.</div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label audience"><span class="dot"></span>Audience</span>
+            <div class="sg-value">Sales · Customer Success</div>
+            <div class="sg-tags">
+              <span class="sg-tag blue">[seat count]</span>
+              <span class="sg-tag navy">Front-line</span>
+            </div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label architecture"><span class="dot"></span>Architecture</span>
+            <div class="sg-value">[Your LMS / SCORM]</div>
+            <div class="sg-detail">SCORM-compatible export to existing LMS · BU-level reporting.</div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label programs"><span class="dot"></span>Programmes</span>
+            <div class="sg-value">Commercial Pathway + Coaching</div>
+            <div class="sg-detail">Curated collection · pathway · group coaching cohort each quarter.</div>
+          </div>
+        </div>
+
+        <div class="skill-gap-row placeholder-row">
+          <div class="sg-cell">
+            <span class="sg-label gap"><span class="dot"></span>Skill gap</span>
+            <div class="sg-value">[Add skill gap]</div>
+            <div class="sg-detail">[Why it matters for the business outcome]</div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label audience"><span class="dot"></span>Audience</span>
+            <div class="sg-value">[Audience]</div>
+            <div class="sg-detail">[Headcount · level · BU]</div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label architecture"><span class="dot"></span>Architecture</span>
+            <div class="sg-value">[LMS / HRIS / Slack / standalone]</div>
+            <div class="sg-detail">[How learning gets surfaced and tracked]</div>
+          </div>
+          <div class="sg-cell">
+            <span class="sg-label programs"><span class="dot"></span>Programmes</span>
+            <div class="sg-value">[Pathway / collection / coaching / masterclass]</div>
+            <div class="sg-detail">[What we build, who owns it]</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Step 3: First 90 days · how we get there -->
+      <div class="map-step" style="margin-top: 36px;">
+        <div class="map-step-num">3</div>
+        <h3>First 90 days · how we get there</h3>
+      </div>
+      <p class="map-section-sub">The actions that turn this plan into a live programme — owned jointly between your team and your CSM.</p>
+      <div class="action-grid">
+        <div class="action-card"><div class="anum">1</div><h5>Capture your business outcome</h5><p>At onboarding, in your own words. Every metric anchors back to it.</p><span class="day-tag">Onboarding</span></div>
+        <div class="action-card"><div class="anum">2</div><h5>Map your stakeholders</h5><p>Identify everyone influenced by the rollout — Economic Buyer, Exec Sponsor, programme owner, admins, and BU leads who will see the impact.</p><span class="day-tag">Day 0-30</span></div>
+        <div class="action-card"><div class="anum">3</div><h5>Switch on integrations &amp; SSO</h5><p>SSO live, HRIS auto-provisioning configured, LMS hooked in where applicable.</p><span class="day-tag">Day 14-45</span></div>
+        <div class="action-card"><div class="anum">4</div><h5>Build company collections</h5><p>5+ branded collections aligned to your planned L&amp;D initiatives — leadership, talent management, AI fluency, technical skills.</p><span class="day-tag">Day 30-60</span></div>
+        <div class="action-card"><div class="anum">5</div><h5>Build skill pathways</h5><p>3+ pathways for department-specific skill development — engineering, sales, people leaders, customer-facing teams.</p><span class="day-tag">Day 45-75</span></div>
+        <div class="action-card"><div class="anum">6</div><h5>Sign the Mutual Action Plan</h5><p>One-page joint plan signed by your exec sponsor and Blinkist — your North Star for year one.</p><span class="day-tag">Day 60-90</span></div>
+      </div>
+
+      <div class="observation" style="margin-top:24px;"><b>How we use this.</b> The MAP is co-authored with your L&amp;D lead and signed by your exec sponsor and the Blinkist team. We review it at every QBR — closing rows that have hit their mark and adding new gaps as the business outcome evolves.</div>
+
+      <!-- Step 4: Signatures -->
+      <div class="map-sigs">
+        <div class="map-sigs-head">
+          <div class="map-step-num">4</div>
+          <div>
+            <h3>Signatories</h3>
+            <p>This Mutual Action Plan is jointly endorsed by the parties below.</p>
+          </div>
+        </div>
+        <div class="sig-grid">
+
+          <div class="sig-block customer">
+            <div class="sig-line"></div>
+            <div class="sig-role">Champion · L&amp;D Lead</div>
+            <div class="sig-name">[Name]</div>
+            <div class="sig-org">[Company Name]</div>
+            <div class="sig-date">Date</div>
+          </div>
+
+          <div class="sig-block customer">
+            <div class="sig-line"></div>
+            <div class="sig-role">Executive Sponsor</div>
+            <div class="sig-name">[Name]</div>
+            <div class="sig-org">[Company Name]</div>
+            <div class="sig-date">Date</div>
+          </div>
+
+          <div class="sig-block blinkist">
+            <div class="sig-line"></div>
+            <div class="sig-role">Customer Success Manager</div>
+            <div class="sig-name">Marlon Tinneberg</div>
+            <div class="sig-org">Blinkist Business</div>
+            <div class="sig-date">Date</div>
+          </div>
+
+          <div class="sig-block blinkist">
+            <div class="sig-line"></div>
+            <div class="sig-role">Chief Executive Officer</div>
+            <div class="sig-name">Holger Seim</div>
+            <div class="sig-org">Blinkist Business</div>
+            <div class="sig-date">Date</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+<!-- /TAB 2 -->
+
+<!-- ============================================ -->
+<!-- TAB 3: ROI TRACKING                          -->
+<!-- ============================================ -->
+<div class="tab-panel" id="tab-roi">
+
+  <!-- STAKEHOLDERS & ADMINS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div class="head-left"><div class="icon-tile">👤</div><h2>Stakeholders &amp; admins</h2></div><span class="sub">Everyone influenced by the rollout — sponsor team and operational admins</span></div>
+      <div class="metric-grid five">
+        <div class="metric"><div class="status-dot"></div><div class="label">Economic Buyer</div><div class="target-tag">Target</div><div class="value">Named</div><div class="ctx">Confirmed budget authority — typically L&amp;D, HR, or People director.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Exec sponsor</div><div class="target-tag">Target</div><div class="value">C-suite / SVP</div><div class="ctx">Signs the Mutual Action Plan and attends the quarterly executive review.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Main admin/s</div><div class="target-tag">Target</div><div class="value large">1-2</div><div class="ctx">L&amp;D ops or HR Business Partner — drives the day-to-day deployment.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Manager admin/s</div><div class="target-tag">Target</div><div class="value large">3+</div><div class="ctx">One per priority BU — distributes adoption load and surfaces team-level signal.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Backup admin/s</div><div class="target-tag">Target</div><div class="value large">1+</div><div class="ctx">Secondary admin so the platform never goes dark when key people are away.</div></div>
+      </div>
+      <div class="observation"><b>Why this matters.</b> A broad stakeholder base + a distributed admin layer are the foundations that turn a tool into a programme. Without them, Blinkist is a benefits perk; with them, it's infrastructure for how your people develop.</div>
+    </div>
+  </section>
+
+  <!-- USER PROVISIONING -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head"><div class="head-left"><div class="icon-tile">👥</div><h2>User provisioning</h2></div><span class="sub">How learners are organised inside the platform</span></div>
+      <div class="metric-grid">
+        <div class="metric"><div class="status-dot"></div><div class="label">Teams configured</div><div class="target-tag">Target</div><div class="value">By BU / function / geo</div><div class="ctx">Mirrors your org chart so reporting flows naturally to the people who own the budget.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Users without an assigned team</div><div class="target-tag">Target</div><div class="value large">0</div><div class="ctx">Every learner attached to a team — unlocks BU-level engagement reporting.</div></div>
+      </div>
+      <div class="observation"><b>Why this matters.</b> Team segmentation is what turns a flat user list into a story you can tell internally. "Engineering is at 62% MAU, Sales is at 28% — here's why" is a conversation your L&amp;D leader can have only when the structure is in place.</div>
+    </div>
+  </section>
+
+  <!-- ADMIN CURATION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div class="head-left"><div class="icon-tile">📚</div><h2>Admin curation</h2></div><span class="sub">Content programming and learner experience</span></div>
+      <div class="metric-grid">
+        <div class="metric"><div class="status-dot"></div><div class="label">Company collections</div><div class="target-tag">Target</div><div class="value large">5+</div><div class="ctx">Branded curated sets per quarter — aligned to your L&amp;D themes.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Pathways created</div><div class="target-tag">Target</div><div class="value large">3+</div><div class="ctx">Linear skill journeys — onboarding, leadership, technical fluency.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Assignments</div><div class="target-tag">Target</div><div class="value">Programme-based</div><div class="ctx">Linked to specific L&amp;D priorities so completion is measurable.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Custom programmes</div><div class="target-tag">Target</div><div class="value large">1+ live</div><div class="ctx">Tied to a named L&amp;D initiative with a customer-side owner — refreshed quarterly.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Resources shared</div><div class="target-tag">Target</div><div class="value large">≥20</div><div class="ctx">Your internal documents uploaded into Blinkist — one learning surface for both Blinkist content and your own materials.</div></div>
+      </div>
+      <div class="observation"><b>Why this matters.</b> Self-directed learning gets you halfway — admin-led curation gets you the rest. When Blinkist content is wired into your programmes, every learning moment compounds into the L&amp;D outcomes you're already pursuing.</div>
+    </div>
+  </section>
+
+  <!-- ACCESSIBLE -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head"><div class="head-left"><div class="icon-tile">🌍</div><h2>Accessible</h2></div><span class="sub">Reach across your workforce</span></div>
+      <div class="metric-grid">
+        <div class="metric"><div class="status-dot"></div><div class="label">Adoption rate</div><div class="target-tag">Target</div><div class="value large">85-100%</div><div class="ctx">Of contracted seats actively used. Strong signal of right-sized scope.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Whitespace</div><div class="target-tag">Target</div><div class="value">Mapped</div><div class="ctx">Documented expansion path: BUs × addressable seats × intro paths.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">MAU rate</div><div class="target-tag">Target</div><div class="value large">≥40%</div><div class="ctx">Top-decile benchmark for monthly active users among enterprise customers.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Mobile adoption</div><div class="target-tag">Target</div><div class="value large">≥60%</div><div class="ctx">Multi-channel access — learners use Blinkist where it fits their day.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Audio-first behaviour</div><div class="target-tag">Target</div><div class="value large">≥70%</div><div class="ctx">Audio listening share — learning during commutes, between meetings, while walking.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Outside-hours learning</div><div class="target-tag">Target</div><div class="value large">≥30%</div><div class="ctx">Strong intrinsic-motivation signal — learners choose to use it on their own time.</div></div>
+      </div>
+      <div class="observation"><b>Why this matters.</b> These six numbers tell you whether learning has actually become a habit. When MAU clears 40% and outside-hours clears 30%, Blinkist isn't a tool any more — it's a behaviour.</div>
+    </div>
+  </section>
+
+  <!-- ACTIONABLE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div class="head-left"><div class="icon-tile">🎯</div><h2>Actionable</h2></div><span class="sub">Learning consumption and skill outcomes</span></div>
+      <div class="metric-grid">
+        <div class="metric"><div class="status-dot"></div><div class="label">Total learning time</div><div class="target-tag">Target</div><div class="value">1,000+ <small>hrs / quarter</small></div><div class="ctx">For a 600-employee deployment. Equivalent to ~125 work-days returned.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Blinks per active user</div><div class="target-tag">Target</div><div class="value large">12-24 <small>/ year</small></div><div class="ctx">Engaged learners consume 1-2 Blinks per month — sustained, not one-off.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Skill application rate</div><div class="target-tag">Target</div><div class="value large">60-72%</div><div class="ctx">Industry benchmark — frameworks from Blinks applied to real work decisions.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Skill applications (annual)</div><div class="target-tag">Target</div><div class="value large">10,000+</div><div class="ctx">For a 600-employee org. Compounds: better managers → better teams → better outcomes.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Coaching skill applications</div><div class="target-tag">Add-on</div><div class="value">Tracked in coaching</div><div class="ctx">Available with Blinkist Coaching — group sessions deliver measurable skill outcomes.</div></div>
+      </div>
+      <div class="observation"><b>Why this matters.</b> The application rate is the metric most enterprises miss. It's not "how much did people consume?" — it's "how much of what they consumed actually changed how they work?" Blinkist's 60-72% benchmark is what makes the ROI compound.</div>
+    </div>
+  </section>
+
+  <!-- SOCIAL -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head"><div class="head-left"><div class="icon-tile">🎤</div><h2>Social</h2></div><span class="sub">Synchronous and peer-led learning</span></div>
+      <div class="metric-grid">
+        <div class="metric"><div class="status-dot"></div><div class="label">Masterclass attendance</div><div class="target-tag">Target</div><div class="value large">≥20%</div><div class="ctx">Of active users joining expert-led LIVE sessions each quarter — a healthy appetite for synchronous learning.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Team sessions</div><div class="target-tag">Target</div><div class="value large">1+ <small>/ quarter</small></div><div class="ctx">Peer-led learning sessions — learners running cohorts on Blinks they care about.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Coaching</div><div class="target-tag">Target</div><div class="value">Active programme</div><div class="ctx">Skills-based group coaching for a priority cohort (managers, leaders, IB teams, etc.).</div></div>
+      </div>
+      <div class="observation"><b>Why this matters.</b> Async learning gives you scale; synchronous learning gives you depth. Customers who run both layers consistently outperform on retention and skill-uptake metrics.</div>
+    </div>
+  </section>
+
+  <!-- SYSTEMS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div class="head-left"><div class="icon-tile">🔌</div><h2>Systems</h2></div><span class="sub">Technical foundations and integrations</span></div>
+      <div class="metric-grid">
+        <div class="metric"><div class="status-dot"></div><div class="label">SSO</div><div class="target-tag">Target</div><div class="value">Live</div><div class="ctx">Single sign-on via your identity provider — frictionless launch from day one.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">Integration</div><div class="target-tag">Target</div><div class="value">HRIS / LMS</div><div class="ctx">Workday, SuccessFactors, Degreed, SCORM-compatible LMS — pick what you use.</div></div>
+        <div class="metric"><div class="status-dot"></div><div class="label">HRIS auto-provisioning</div><div class="target-tag">Target</div><div class="value">Yes</div><div class="ctx">New joiners get Blinkist on day one — no manual admin overhead.</div></div>
+      </div>
+      <div class="observation"><b>Why this matters.</b> Integrations are what convert Blinkist from "another tab" into infrastructure. SSO + HRIS auto-provisioning together remove the operational ceiling on how big the deployment can grow.</div>
+    </div>
+  </section>
+
+  <section class="legend-wrap">
+    <div class="container">
+      <div class="legend">
+        <div class="item"><span class="swatch" style="background:#21D87B"></span>Target benchmark — what success looks like</div>
+        <div class="source">Benchmarks based on Blinkist's enterprise customers over the past 5 years.</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- /TAB 3 -->
+
+<!-- ============================================ -->
+<!-- TAB 4: YOUR ADMIN SPACE                      -->
+<!-- ============================================ -->
+<div class="tab-panel" id="tab-admin">
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="head-left"><div class="icon-tile">⚙️</div><h2>Your Admin Space</h2></div>
+        <span class="sub">Quick access to your most-used Blinkist admin actions</span>
+      </div>
+      <p class="admin-intro">Jump straight into your Blinkist Business workspace. Each link opens in a new tab — keep this Success Plan open alongside it.</p>
+
+      <div class="admin-grid">
+
+        <a href="https://www.blinkist.com/business/login" target="_blank" rel="noopener" class="admin-card admin-card-primary">
+          <div class="ac-icon">→</div>
+          <div class="ac-body">
+            <div class="ac-cat">Quick access</div>
+            <h3 class="ac-title">Log in to Blinkist Business</h3>
+            <p class="ac-desc">Open your admin dashboard.</p>
+          </div>
+          <span class="ac-arrow">↗</span>
+        </a>
+
+        <a href="https://www.blinkist.com/app/business/admin/learners-and-plan/learner/invite" target="_blank" rel="noopener" class="admin-card">
+          <div class="ac-cat">Users</div>
+          <h3 class="ac-title">Invite Users</h3>
+          <p class="ac-desc">Add new learners to your plan.</p>
+          <span class="ac-arrow">↗</span>
+        </a>
+
+        <a href="https://www.blinkist.com/app/business/admin/learners-and-plan/groups" target="_blank" rel="noopener" class="admin-card">
+          <div class="ac-cat">Users</div>
+          <h3 class="ac-title">Manage Groups</h3>
+          <p class="ac-desc">Organise learners into teams, BUs or geographies.</p>
+          <span class="ac-arrow">↗</span>
+        </a>
+
+        <a href="https://www.blinkist.com/app/business/admin/collections" target="_blank" rel="noopener" class="admin-card">
+          <div class="ac-cat">Content</div>
+          <h3 class="ac-title">Manage Collections</h3>
+          <p class="ac-desc">Curate branded sets aligned to your L&amp;D priorities.</p>
+          <span class="ac-arrow">↗</span>
+        </a>
+
+        <a href="https://www.blinkist.com/app/pathways/admin/create" target="_blank" rel="noopener" class="admin-card">
+          <div class="ac-cat">Content</div>
+          <h3 class="ac-title">Create a Pathway</h3>
+          <p class="ac-desc">Build a linear skill journey for a cohort.</p>
+          <span class="ac-arrow">↗</span>
+        </a>
+
+        <a href="https://www.blinkist.com/app/coaching" target="_blank" rel="noopener" class="admin-card">
+          <div class="ac-cat">Programmes</div>
+          <h3 class="ac-title">Review Coaching Options</h3>
+          <p class="ac-desc">Group coaching for managers, leaders and priority cohorts.</p>
+          <span class="ac-arrow">↗</span>
+        </a>
+
+        <a href="https://www.blinkist.com/app/business/admin/insights" target="_blank" rel="noopener" class="admin-card">
+          <div class="ac-cat">Insights</div>
+          <h3 class="ac-title">Insights Dashboard</h3>
+          <p class="ac-desc">Engagement, adoption, and skill metrics across your plan.</p>
+          <span class="ac-arrow">↗</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY DOCUMENTS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="head-left"><div class="icon-tile">📁</div><h2>Key Documents</h2></div>
+        <span class="sub">Reference materials for your team</span>
+      </div>
+
+      <div class="admin-grid">
+
+        <a href="#" target="_blank" rel="noopener" class="admin-card">
+          <div class="ac-cat">Contract</div>
+          <h3 class="ac-title">Signed Contract</h3>
+          <p class="ac-desc">Your master service agreement with Blinkist Business — terms, scope, and renewal dates.</p>
+          <span class="ac-arrow">↗</span>
+        </a>
+
+        <a href="#" target="_blank" rel="noopener" class="admin-card">
+          <div class="ac-cat">Onboarding</div>
+          <h3 class="ac-title">Admin Onboarding Video</h3>
+          <p class="ac-desc">A guided walkthrough of the admin dashboard — share with new admins.</p>
+          <span class="ac-arrow">↗</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOM PROGRAMS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="head-left"><div class="icon-tile">🎓</div><h2>Custom Programs</h2></div>
+        <span class="sub">Programmes built specifically for your team — kept here for quick access</span>
+      </div>
+      <p class="admin-intro">Each programme below is a tailored deployment for [Company Name] — typically a curated collection, pathway, or coaching cohort tied to a named L&amp;D priority. New programmes appear here as they go live.</p>
+
+      <div class="admin-grid">
+
+        <a href="#" target="_blank" rel="noopener" class="admin-card admin-card-placeholder">
+          <div class="ac-cat">Pathway</div>
+          <h3 class="ac-title">[Programme name]</h3>
+          <p class="ac-desc">[Audience · cohort size · launch date]</p>
+          <span class="ac-arrow">↗</span>
+        </a>
+
+        <a href="#" target="_blank" rel="noopener" class="admin-card admin-card-placeholder">
+          <div class="ac-cat">Collection</div>
+          <h3 class="ac-title">[Programme name]</h3>
+          <p class="ac-desc">[Audience · cohort size · launch date]</p>
+          <span class="ac-arrow">↗</span>
+        </a>
+
+        <a href="#" target="_blank" rel="noopener" class="admin-card admin-card-placeholder">
+          <div class="ac-cat">Coaching</div>
+          <h3 class="ac-title">[Programme name]</h3>
+          <p class="ac-desc">[Audience · cohort size · launch date]</p>
+          <span class="ac-arrow">↗</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+</div>
+<!-- /TAB 4 -->
+
+<!-- LET'S TALK CTA -->
+<section class="cta-final">
+  <div class="container">
+    <span class="eyebrow"><span class="dot"></span> Let's talk</span>
+    <h2>Questions? <span class="mint-text">Talk to your CSM.</span></h2>
+    <p class="lead">A 30-minute call with Marlon to walk through your Success Plan, refresh your Mutual Action Plan, and review progress against your ROI targets.</p>
+    <div class="team-card-final">
+      <div class="team-avatar">MT</div>
+      <div class="team-info">
+        <div class="name">Marlon Tinneberg</div>
+        <div class="role">Lead Customer Success Manager · Blinkist Business</div>
+        <div class="email"><a href="mailto:marlon.tinneberg@blinkist.com">marlon.tinneberg@blinkist.com</a></div>
+        <a href="https://meetings-eu1.hubspot.com/marlon-tinneberg" target="_blank" rel="noopener" class="btn-book">Schedule call with your CSM <span class="arrow">→</span></a>
+      </div>
+    </div>
+    <div class="closing-note">Direct calendar link · 30-min slots available across European time zones</div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="container">
+    <p>Your Success Plan · How we work together · <a href="https://meetings-eu1.hubspot.com/marlon-tinneberg" style="color:#21D87B;text-decoration:none;">Schedule call with your CSM</a></p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var tabs = document.querySelectorAll('.tab');
+    var panels = document.querySelectorAll('.tab-panel');
+    function activate(target){
+      tabs.forEach(function(t){ t.classList.remove('active'); });
+      panels.forEach(function(p){ p.classList.remove('active'); });
+      var btn = document.querySelector('.tab[data-tab="' + target + '"]');
+      if (btn) btn.classList.add('active');
+      var panel = document.getElementById('tab-' + target);
+      if (panel) panel.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    tabs.forEach(function(tab){
+      tab.addEventListener('click', function(){
+        activate(tab.getAttribute('data-tab'));
+      });
+    });
+    document.querySelectorAll('.landing-card').forEach(function(card){
+      card.addEventListener('click', function(){
+        activate(card.getAttribute('data-tab-target'));
+      });
+    });
+    document.querySelectorAll('a.brand').forEach(function(a){
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        activate('overview');
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
